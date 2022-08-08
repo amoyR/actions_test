@@ -1,12 +1,8 @@
-name: learn-github-actions
-on: 
-  push:
-    branches:
-      - main
+name: learn
+on: [push]
 
 jobs:
-  clone_src:
+  check-bats-version:
     runs-on: ubuntu-latest
-
-		steps:
-      - run: echo "Hello"
+    steps:
+      - run: echo "this is pen"
