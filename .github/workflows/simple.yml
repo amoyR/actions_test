@@ -7,6 +7,6 @@ on:
 
 jobs:
   check-bats-version:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps: 
        - run: echo "This is a pen"
