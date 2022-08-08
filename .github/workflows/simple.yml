@@ -7,7 +7,6 @@ jobs:
   clone_src:
     runs-on: ubuntu-latest
 		steps:
-			- run: echo "this is pen"
 			- uses: actions/checkout@v2
 			- run: |
 				ls -al
