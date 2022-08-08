@@ -1,0 +1,19 @@
+name: test_actions
+
+on: 
+  push:
+    branchs:
+      -main
+
+jobs:
+  deploy:
+    name: deploy
+    run-on: ubuntu-latest
+    step: 
+      name: echo a string
+      run: echo "Hello world"
+
+      name: mutiline script
+      run: |
+        node -v
+        npm -v
