@@ -9,7 +9,7 @@ jobs:
   deploy:
     name: deploy
     run-on: ubuntu-latest
-    step: 
+    steps: 
       name: echo a string
       run: echo "Hello world"
 
