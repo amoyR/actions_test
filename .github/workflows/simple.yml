@@ -6,14 +6,7 @@ on:
       -main
 
 jobs:
-  deploy:
-    name: deploy
+  check-bats-version:
     run-on: ubuntu-latest
     steps: 
-      - name: echo a string
-        run: echo "Hello world"
-
-      - name: mutiline script
-        run: |
-        node -v
-        npm -v
+       - run: echo "This is a pen"
