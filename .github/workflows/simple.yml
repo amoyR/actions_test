@@ -1,8 +1,13 @@
-name: learn
+name: checkout
 on: [push]
 
 jobs:
-  check-bats-version:
+  check-out:
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is pen"
+      - uses: actions/checkout@v2
+      - run: |
+          ls -al
+          cd .github/workflows/
+          ls -al
