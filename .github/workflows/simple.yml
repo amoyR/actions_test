@@ -4,8 +4,8 @@ on:
     branches:
       - main
 jobs:
-	check-out:
-		runs-on: ubuntu-latest
+  clone_src:
+    runs-on: ubuntu-latest
 		steps:
 			- run: echo "this is pen"
 			- uses: actions/checkout@v2
